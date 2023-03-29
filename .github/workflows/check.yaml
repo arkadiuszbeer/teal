@@ -21,7 +21,7 @@ jobs:
     uses: insightsengineering/r.pkg.template/.github/workflows/audit.yaml@main
   r-cmd-on-windows:
     name: R CMD Check on Windows🧬
-    uses: arkadiuszbeer/r.pkg.template/.github/workflows/build-check-install.yaml@main
+    uses: arkadiuszbeer/r.pkg.template/.github/workflows/build-check-install-on-windows.yaml@main
     secrets:
       REPO_GITHUB_TOKEN: ${{ secrets.REPO_GITHUB_TOKEN }}
     with:
