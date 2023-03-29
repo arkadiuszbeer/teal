@@ -28,9 +28,9 @@ jobs:
       additional-env-vars: |
         _R_CHECK_CRAN_INCOMING_REMOTE_=false
       additional-r-cmd-check-params: --as-cran
-  r-cmd:
-    name: R CMD Check 🧬
-    uses: arkadiuszbeer/r.pkg.template/.github/workflows/build-check-install.yaml@main
+  r-cmd-on-mac:
+    name: R CMD Check on mac 🧬
+    uses: arkadiuszbeer/r.pkg.template/.github/workflows/build-check-install-on-mac.yaml@main
     secrets:
       REPO_GITHUB_TOKEN: ${{ secrets.REPO_GITHUB_TOKEN }}
     with:
